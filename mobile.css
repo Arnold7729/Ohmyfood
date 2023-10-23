@@ -1,0 +1,185 @@
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  header .header__logo {
+    width: 50%;
+  }
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 50px;
+  }
+  .location i {
+    margin-right: 16px;
+  }
+  .heroheader {
+    padding: 0 5vw;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(white, #eaeaea);
+  }
+  .heroheader .heroheader__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 40px 0px 15px 0px;
+  }
+  .heroheader .heroheader__title .heroheader__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px;
+    padding: 14px 17px;
+    margin: 30px 0px 50px 0px;
+    background: linear-gradient(#ff79da, #9356dc);
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+  .fonctionnement__title {
+    font-weight: 800;
+    margin: 40px 0px 20px 15px;
+  }
+  .fonctionnement__card {
+    border-radius: 19px 19px 19px 19px;
+    padding: 23px 17px;
+    margin: 10px 15px 20px 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f6;
+    font-weight: bolder;
+  }
+  .fonctionnement__card .fonctionnement__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #9356dc;
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+  }
+  .icon__fonction {
+    position: relative;
+    margin-right: 22px;
+    margin-left: 15px;
+    color: grey;
+  }
+  .icon__fonction .icon__fonction {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 15px;
+    color: grey;
+  }
+  .icon__fonction--store {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 15px;
+    color: #9356dc;
+  }
+  .restaurants {
+    background-color: #eaeaea;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+  }
+  .restaurants .article {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #ffffff;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+  .restaurants .article img {
+    height: 150px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-content h3 {
+    color: #000000;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .card-content p {
+    color: #000000;
+    margin-top: 2px;
+    margin-left: 15px;
+  }
+  .card-content .heart {
+    margin-right: 20px;
+    margin-top: 15px;
+    size: 65px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .section-restaurants .card-new1 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    padding: 5px 5px 5px 5px;
+    background-color: #99e2d0;
+    color: #1a8a68;
+  }
+  .section-restaurants .card-new2 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    padding: 5px 5px 5px 5px;
+    background-color: #99e2d0;
+    color: #1a8a68;
+  }
+  .footer {
+    height: 186px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color: #353535;
+    color: #ffffff;
+  }
+  .footer .logo__footer {
+    color: #ffffff;
+    font-family: "Shrikhand", serif;
+    font-size: 22px;
+    margin-left: 25px;
+  }
+  footer p {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  footer .fa-utensils {
+    margin-right: 15px;
+  }
+  footer .fa-hands-helping {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,230 @@
+@media (max-width: 768px) {
+  // font-family: "Manrope", sans-serif;
+  // font-family: "Montserrat", sans-serif;
+  // font-family: "Shrikhand", serif;
+  // font-family: "Manrope", sans-serif;
+  // p {
+  //   font-family: "Roboto", sans-serif;
+  // }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  // Couleurs du site
+
+  $grey-light: #eaeaea;
+  $white: #ffffff;
+  $dark-grey: #353535;
+  $green-light: #99e2d0;
+  $dark-green: #1a8a68;
+  $black: #000000;
+  $purple: #9356dc;
+
+  // Mixin
+
+  @mixin mix-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //Header
+
+  header {
+    @include mix-flex;
+    padding: 15px;
+    .header__logo {
+      width: 50%;
+    }
+  }
+
+  //Heroheader
+
+  .location {
+    @include mix-flex;
+    background-color: $grey-light;
+    height: 50px;
+  }
+  .location i {
+    margin-right: 16px;
+  }
+
+  .heroheader {
+    padding: 0 5vw;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(white, #eaeaea);
+
+    .heroheader__title {
+      @include mix-flex;
+      font-size: 25px;
+      margin: 40px 0px 15px 0px;
+
+      .heroheader__button {
+        @include mix-flex;
+        border-radius: 30px 30px 30px 30px;
+        padding: 14px 17px;
+        margin: 30px 0px 50px 0px;
+        background: linear-gradient(#ff79da, #9356dc);
+        text-decoration: none;
+        color: $white;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  //Fonctionnement
+
+  .fonctionnement__title {
+    font-weight: 800;
+    margin: 40px 0px 20px 15px;
+  }
+  .fonctionnement__card {
+    border-radius: 19px 19px 19px 19px;
+    padding: 23px 17px;
+    margin: 10px 15px 20px 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f6;
+    font-weight: bolder;
+
+    .fonctionnement__button {
+      @include mix-flex;
+      padding: 4px 8px;
+      background-color: #9356dc;
+      color: $white;
+      border-radius: 50%;
+      position: absolute;
+      left: 20px;
+    }
+  }
+
+  //Icon
+
+  .icon__fonction {
+    position: relative;
+    margin-right: 22px;
+    margin-left: 15px;
+    color: grey;
+
+    .icon__fonction {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 15px;
+      color: grey;
+    }
+  }
+  .icon__fonction--store {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 15px;
+    color: $purple;
+  }
+
+  //Card
+
+  .restaurants {
+    background-color: $grey-light;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+
+    .article {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: $white;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+
+      img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-content h3 {
+    color: $black;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .card-content p {
+    color: $black;
+    margin-top: 2px;
+    margin-left: 15px;
+  }
+  .card-content .heart {
+    margin-right: 20px;
+    margin-top: 15px;
+    size: 65px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  //card NEWW
+
+  .section-restaurants .card-new1 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    padding: 5px 5px 5px 5px;
+    background-color: $green-light;
+    color: $dark-green;
+  }
+  .section-restaurants .card-new2 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    padding: 5px 5px 5px 5px;
+    background-color: $green-light;
+    color: $dark-green;
+  }
+
+  //footer
+
+  .footer {
+    height: 186px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color: $dark-grey;
+    color: $white;
+
+    .logo__footer {
+      color: $white;
+      font-family: "Shrikhand", serif;
+      font-size: 22px;
+      margin-left: 25px;
+    }
+  }
+  footer p {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  footer .fa-utensils {
+    margin-right: 15px;
+  }
+  footer .fa-hands-helping {
+    margin-right: 10px;
+  }
+}
