@@ -11,21 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!--header-->
+
     <header>
       <img
         class="header__logo"
@@ -35,22 +35,28 @@
       />
     </header>
     <main>
+      <!--location-->
+
       <section class="location">
         <i class="fas fa-map-marker-alt"></i>
         <span class="Localisation">Paris, Belleville</span>
       </section>
+
+      <!--heroheader-->
+
       <section class="heroheader">
         <h3 class="heroheader__title">Réservez le menu qui vous convient</h3>
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <div>
-          <a href="#" class="heroheader__button">Explorer nos restaurants</a>
-        </div>
+        <button class="heroheader__button">Explorer nos restaurants</button>
       </section>
+
+      <!--fonctionnement-->
+
       <section class="fonctionnement">
         <h2 class="fonctionnement__title">Fonctionnement</h2>
-        <div class="fonctionnement__card">
+        <div class="card__fonctionnement">
           <div class="fonctionnement__button">
             <p>1</p>
           </div>
@@ -59,7 +65,7 @@
             restaurant
           </span>
         </div>
-        <div class="fonctionnement__card">
+        <div class="card__fonctionnement">
           <div class="fonctionnement__button">
             <p>2</p>
           </div>
@@ -67,7 +73,7 @@
             ><i class="fas fa-list-ul icon__fonction"></i>Composez votre menu
           </span>
         </div>
-        <div class="fonctionnement__card">
+        <div class="card__fonctionnement">
           <div class="fonctionnement__button">
             <p>3</p>
           </div>
@@ -77,14 +83,17 @@
           </span>
         </div>
       </section>
+
+      <!--restaurants-->
+
       <section class="restaurants">
         <div>
           <h1>Restaurants</h1>
         </div>
         <div class="section-restaurants">
-          <a href="#">
+          <a href="Restaurant/lapalettedugoût.html">
             <article class="article">
-              <div class="card-new1">
+              <div class="card-new">
                 <p>Nouveau</p>
               </div>
               <img
@@ -104,7 +113,7 @@
           </a>
           <a href="#">
             <article class="article">
-              <div class="card-new2">
+              <div class="card-new">
                 <p>Nouveau</p>
               </div>
               <img
@@ -158,6 +167,9 @@
           </a>
         </div>
       </section>
+
+      <!--footer-->
+
       <footer>
         <section class="footer">
           <div class="footer-info">
