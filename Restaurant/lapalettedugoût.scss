@@ -191,7 +191,7 @@ $purple: #9356dc;
 
 //footer
 
-.logo {
+.logo__footer {
   color: $white;
   font-family: "Shrikhand", serif;
   font-size: 22px;
@@ -221,4 +221,81 @@ $purple: #9356dc;
 }
 .fa-hands-helping {
   margin-right: 10px;
+}
+
+//desktop
+
+@media screen and (min-width: 768px) {
+  main {
+    background: #ffff;
+  }
+
+  .menu article {
+    max-width: 634px;
+    margin: auto;
+    position: relative;
+    padding-right: 230px;
+    padding-left: 230px;
+    background-color: $white;
+  }
+  .menu__underline {
+    width: 7%;
+  }
+  .header .logo {
+    padding-bottom: 10px;
+    margin-top: -20px;
+  }
+  .container {
+    max-width: 1055px;
+    margin: auto;
+    position: relative;
+    background-color: $white;
+  }
+  .title__head {
+    @include mix-flex;
+    gap: 30px;
+    max-width: 1055px;
+    margin: auto;
+    position: relative;
+    background-color: $white;
+    padding-bottom: 43px;
+    margin-bottom: -52px;
+  }
+  .button {
+    width: 20%;
+  }
+  .img__head {
+    height: 350px;
+  }
+  //footer
+
+  .footer {
+    height: auto;
+
+    .footer-info {
+      width: auto;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 20px;
+
+      .logo__footer {
+        margin-bottom: 10px;
+        margin-right: 60px;
+        font-family: "Shrikhand", serif;
+      }
+    }
+  }
+
+  .footer-info .test {
+    display: flex;
+    flex-direction: row;
+
+    .p-desktop {
+      display: flex;
+      flex-direction: row;
+      margin-right: 50px;
+      margin-left: 30px;
+    }
+  }
 }

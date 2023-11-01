@@ -235,3 +235,98 @@ a {
     margin-right: 10px;
   }
 }
+//desktop
+
+@media screen and (min-width: 768px) {
+  //header
+
+  header .header__logo {
+    width: 15%;
+  }
+  .heroheader {
+    padding-bottom: 10px;
+  }
+  .heroheader h3 {
+    font-size: 35px;
+  }
+
+  //fonctionnement
+  .container {
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+  }
+
+  .fonctionnement {
+    @include mix-flex;
+    flex-wrap: wrap;
+  }
+  h2 {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .card__fonctionnement {
+    width: 24%;
+
+    .fonctionnement__button {
+      @include mix-flex;
+      position: relative;
+      width: 7px;
+      height: 16px;
+      border-radius: 50%;
+      left: -30px;
+      margin-bottom: -21px;
+    }
+  }
+
+  //restaurants
+
+  .section-restaurants {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section-restaurants a {
+    width: 40%;
+    margin-top: 20px;
+    gap: 40px;
+  }
+
+  .section-restaurants h1 {
+    width: 100%;
+    font-size: x-large;
+    padding: 0px 50px;
+  }
+
+  //footer
+
+  .footer {
+    height: 60px;
+
+    .footer-info {
+      width: auto;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 25px;
+
+      .logo__footer {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .footer-info .test {
+    display: flex;
+    flex-direction: row;
+
+    .p-desktop {
+      display: flex;
+      flex-direction: row;
+      margin-right: 50px;
+      margin-left: 30px;
+    }
+  }
+}
