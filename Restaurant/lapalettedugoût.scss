@@ -10,10 +10,18 @@ h3,
 h4,
 span {
   font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 main {
   background-color: #f6f6f6;
+}
+p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 // Couleurs du site
 
@@ -188,7 +196,11 @@ $purple: #9356dc;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
-
+.button:hover {
+  background: linear-gradient(#eb58c1, #935fd8);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
 //footer
 
 .logo__footer {
@@ -243,7 +255,6 @@ $purple: #9356dc;
   }
   .header .logo {
     padding-bottom: 10px;
-    margin-top: -20px;
   }
   .container {
     max-width: 1055px;
