@@ -113,6 +113,8 @@ p {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   background-color: white;
   font-weight: bolder;
+  animation: slideup 2s forwards;
+  opacity: 0;
 }
 .card__title {
   font-style: normal;
@@ -123,6 +125,16 @@ p {
   display: block;
 }
 
+@keyframes slideup {
+  0% {
+    transform: translatey(-50px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
 .card__subtitle {
   font-style: normal;
   display: flex;
@@ -142,6 +154,31 @@ p {
 .card__subtitle .card__price {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.card:hover .menuSelection {
+  opacity: 100%;
+  width: 7rem;
+}
+
+.menuItem .menuSelection .checkIcon {
+  font-size: 3rem;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
+.menuSelection {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .section__button {

@@ -143,6 +143,8 @@ $purple: #9356dc;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   background-color: $light-white;
   font-weight: bolder;
+  animation: slideup 2s forwards;
+  opacity: 0;
 
   &__title {
     @include font-normal;
@@ -151,6 +153,17 @@ $purple: #9356dc;
     font-size: 18px;
     font-weight: bold;
     display: block;
+  }
+}
+@keyframes slideup {
+  0% {
+    transform: translatey(-50px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
   }
 }
 .card__subtitle {
@@ -175,6 +188,32 @@ $purple: #9356dc;
   }
 }
 
+//Card check
+
+.card:hover .menuSelection {
+  opacity: 100%;
+  width: 7rem;
+}
+.menuItem .menuSelection .checkIcon {
+  font-size: 3rem;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+
+.menuSelection {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+}
 //Bouton commander
 
 .section__button {
@@ -310,3 +349,4 @@ $purple: #9356dc;
     }
   }
 }
+//animation
