@@ -99,11 +99,29 @@ $purple: #9356dc;
   }
 }
 
-.fa-heart {
-  margin-right: 35px;
-  font-size: 25px;
+.far-heart {
+  opacity: 1;
+  margin-right: 23px;
+  font-size: x-large;
 }
 
+.fas-heart {
+  opacity: 0;
+  position: absolute;
+  margin-right: 23px;
+  font-size: x-large;
+}
+
+//heart animation
+
+.fas-heart:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(red, $purple);
+  transition: all 1s;
+  transform: scale(1);
+}
 //menu
 
 .menu .entrees {
@@ -143,8 +161,9 @@ $purple: #9356dc;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   background-color: $light-white;
   font-weight: bolder;
-  animation: slideup 2s forwards;
+  animation: slideup 4s forwards;
   opacity: 0;
+  overflow: hidden;
 
   &__title {
     @include font-normal;
@@ -185,35 +204,41 @@ $purple: #9356dc;
   .card__price {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    // margin-right: -100px;
+    margin-left: auto;
   }
 }
 
 //Card check
 
-.card:hover .menuSelection {
-  opacity: 100%;
-  width: 7rem;
-}
-.menuItem .menuSelection .checkIcon {
-  font-size: 3rem;
-  color: white;
-  transform: rotate(360deg);
-  transition: 0.4s ease-in-out;
-}
-
-.menuSelection {
+.anim-check {
+  @include mix-flex;
   background: #99e2d0;
   cursor: pointer;
-  height: auto;
+  margin-top: -38px;
+  margin-left: 2rem;
+  margin-right: -2rem;
   width: 0;
-  opacity: 0;
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+  opacity: 1;
+  border-radius: 0px 0px 0px 0px;
+  transition: transform 0.4s, ease-in-out, width 0.4s ease-in-out,
     opacity 0.4s ease-in-out;
 }
+
+.card:hover .checkIcon {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}
+.card:hover .anim-check {
+  opacity: 100%;
+  width: 6rem;
+}
+
 //Bouton commander
 
 .section__button {
@@ -239,7 +264,45 @@ $purple: #9356dc;
   background: linear-gradient(#eb58c1, #935fd8);
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s;
+  animation: vibrate 0.4s;
 }
+
+@keyframes vibrate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-1deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
 //footer
 
 .logo__footer {
