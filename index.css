@@ -330,8 +330,23 @@ a {
   padding: 7px 10px;
   background-color: #99e2d0;
   color: #1a8a68;
+  animation-duration: 1.5s;
+  animation-name: clignotement;
+  animation-iteration-count: infinite;
+  transition: none;
 }
 
+@keyframes clignotement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   height: 186px;
   padding-top: 25px;

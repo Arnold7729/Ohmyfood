@@ -223,22 +223,32 @@ $purple: #9356dc;
   width: 0;
   opacity: 1;
   border-radius: 0px 0px 0px 0px;
-  transition: transform 0.4s, ease-in-out, width 0.4s ease-in-out,
+  transition: 0.4s, ease-in-out, width 0.4s ease-in-out,
     opacity 0.4s ease-in-out;
 }
-
+.checkIcon {
+  color: white;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
 .card:hover .checkIcon {
   margin-right: 1rem;
   font-size: 2rem;
   color: white;
-  transform: rotate(360deg);
-  transition: 0.5s ease-in-out;
+  animation: quarter-spin 0.5s ease-in-out;
 }
 .card:hover .anim-check {
   opacity: 100%;
   width: 6rem;
 }
-
+@keyframes quarter-spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 //Bouton commander
 
 .section__button {
