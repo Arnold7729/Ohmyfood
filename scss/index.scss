@@ -42,7 +42,6 @@ $purple: #9356dc;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   position: fixed;
   opacity: 0.9;
   height: 100vh;
@@ -54,9 +53,8 @@ $purple: #9356dc;
 .loader .box {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #f1f1f1;
-  transition: transform 0.3s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+  align-items: center; 
+  transition: transform 0.3s;
 }
 .loader p {
   color: white;
@@ -342,6 +340,7 @@ a .far-heart {
   opacity: 1;
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
   background-image: linear-gradient(red, $purple);
   animation-name: opa;
 }

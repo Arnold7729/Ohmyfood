@@ -125,6 +125,7 @@ $purple: #9356dc;
   opacity: 1;
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
   background-image: linear-gradient(red, $purple);
   transition: all 1s;
   transform: scale(1);

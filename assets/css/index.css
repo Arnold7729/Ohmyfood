@@ -23,7 +23,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   position: fixed;
   opacity: 0.9;
   height: 100vh;
@@ -37,8 +36,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f1f1f1;
-  transition: transform 0.3s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+  transition: transform 0.3s;
 }
 
 .loader p {
@@ -271,8 +269,7 @@ a .far-heart {
 .restaurants .article img {
   height: 150px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -322,8 +319,8 @@ a .far-heart {
 .fas-heart:hover {
   opacity: 1;
   color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   background-image: linear-gradient(red, #9356dc);
   animation-name: opa;
 }
@@ -361,7 +358,7 @@ a .far-heart {
 .footer {
   height: 186px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   background-color: #353535;
   color: #ffffff;
 }
@@ -370,6 +367,9 @@ a .far-heart {
   font-family: "Shrikhand", serif;
   font-size: 22px;
   margin-left: 25px;
+}
+.footer .test {
+  margin-top: 25px;
 }
 .footer a {
   color: white;
@@ -413,6 +413,7 @@ a .far-heart {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: -30px;
   }
   h2 {
     width: 100%;
@@ -450,17 +451,19 @@ a .far-heart {
     padding: 0px 50px;
   }
   .footer {
-    height: 60px;
+    height: 70px;
+    margin-top: -50px;
   }
   .footer .footer-info {
     width: auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 4px;
   }
   .footer .footer-info .logo__footer {
     margin-right: 60px;
+    margin-top: 20px;
   }
   .footer-info .test {
     display: flex;

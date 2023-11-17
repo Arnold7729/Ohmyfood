@@ -58,7 +58,6 @@ p {
 .img__head {
   height: 250px;
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -100,8 +99,8 @@ p {
 .fas-heart:hover {
   opacity: 1;
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   background-image: linear-gradient(red, #9356dc);
   transition: all 1s;
   transform: scale(1);
@@ -199,8 +198,7 @@ p {
   width: 0;
   opacity: 1;
   border-radius: 0px 0px 0px 0px;
-  transition: 0.4s, ease-in-out, width 0.4s ease-in-out,
-    opacity 0.4s ease-in-out;
+  transition: 0.4s, ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 .anim-check .checkIcon {
   color: white;
@@ -233,6 +231,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin: 10px;
 }
 
 .button {
@@ -301,14 +300,14 @@ p {
   background-color: #353535;
   color: #f6f6f6;
 }
-.test {
-  margin-top: 25px;
-}
 .footer .logo__footer {
   color: #f6f6f6;
   font-family: "Shrikhand", serif;
   font-size: 22px;
   margin-left: 25px;
+}
+.footer .test {
+  margin-top: 25px;
 }
 .footer a {
   color: white;
@@ -330,9 +329,6 @@ p {
 }
 .footer p .fa-hands-helping {
   margin-right: 10px;
-}
-.footer p footer .test {
-  margin-top: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -363,6 +359,7 @@ p {
     margin: auto;
     position: relative;
     background-color: #f6f6f6;
+    margin-bottom: -10px;
   }
   .title__head {
     display: flex;
@@ -385,7 +382,6 @@ p {
   .footer {
     height: 60px;
   }
-
   .footer .footer-info {
     width: auto;
     display: flex;
@@ -396,6 +392,9 @@ p {
   .footer .footer-info .logo__footer {
     margin-right: 60px;
     margin-top: -10px;
+  }
+  .footer .test {
+    margin-top: -13px;
   }
   .footer-info .test {
     display: flex;
@@ -424,4 +423,4 @@ p {
   a:hover {
     cursor: pointer;
   }
-} /*# sourceMappingURL=lapalettedugoût.css.map */
+}/*# sourceMappingURL=menu.css.map */
