@@ -146,6 +146,7 @@ p {
 .card__title {
   font-style: normal;
   padding-top: 15px;
+  padding-right: 85px;
   margin-left: 17px;
   font-size: 18px;
   font-weight: bold;
@@ -184,6 +185,7 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
+  padding-left: 24px;
 }
 
 .anim-check {
@@ -202,13 +204,13 @@ p {
 }
 .anim-check .checkIcon {
   color: white;
-  font-size: 2rem;
+  font-size: 30px;
   margin-right: 1rem;
 }
 
 .card:hover .checkIcon {
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 30px;
   color: white;
   animation: quarter-spin 0.5s ease-in-out;
 }
